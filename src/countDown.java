@@ -92,7 +92,7 @@ public class countDown extends JComponent implements KeyListener {
 		timer=new Timer(1000, new TimerCallBack());
 		timer.start();
 		
-		//millisecond timer
+		// 1/100th second timer
 		timer2=new Timer(100, new TimerCallBack2());
 		timer2.start();
 		
