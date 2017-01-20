@@ -1,3 +1,5 @@
+//a simple new year's countdown animation with sound
+
 //created by nathan mccloud
 
 import javax.sound.sampled.AudioInputStream;
@@ -49,7 +51,7 @@ public class countDown extends JComponent implements KeyListener {
 		g.setColor(gold);
 		
 		try {
-			Font f=Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/LLDCL___.ttf"));
+			Font f=Font.createFont(Font.TRUETYPE_FONT, getClass().getResourceAsStream("/LLDCL___.ttf"));//font created by Markus Schröppel @www.dafont.com/lldcl.font
 			g.setFont(f.deriveFont(Font.PLAIN, 200f));} catch (FontFormatException | IOException ex) {
              ex.printStackTrace();
          }
@@ -92,7 +94,7 @@ public class countDown extends JComponent implements KeyListener {
 		timer=new Timer(1000, new TimerCallBack());
 		timer.start();
 		
-		//millisecond timer
+		//1/100th second timer
 		timer2=new Timer(100, new TimerCallBack2());
 		timer2.start();
 		
@@ -155,6 +157,7 @@ public class countDown extends JComponent implements KeyListener {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
 		frame.setVisible(true);
 		frame.getContentPane().setBackground(Color.WHITE);
+		frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
 
 	}
 		
