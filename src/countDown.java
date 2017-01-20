@@ -139,7 +139,7 @@ public class countDown extends JComponent implements KeyListener {
 	public static void main(String[] args) {
 		//construction of sound
 			try{
-				clipNameAIS = AudioSystem.getAudioInputStream(new File("24 clock countdown (10 seconds).wav"));//24 owned by 21st century fox, explosion sound created by Diman4ik from https://www.youtube.com/watch?v=MdO3_r6juRU 
+				clipNameAIS = AudioSystem.getAudioInputStream(new File("24 clock countdown (10 seconds).wav"));//24 owned by 21st Century Fox, explosion sound created by Diman4ik from https://www.youtube.com/watch?v=MdO3_r6juRU 
 				clipNameClip = AudioSystem.getClip();
 		
 				clipNameClip.open(clipNameAIS);}
