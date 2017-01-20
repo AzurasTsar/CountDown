@@ -93,12 +93,8 @@ public class countDown extends JComponent implements KeyListener {
 		//timer
 		timer=new Timer(1000, new TimerCallBack());
 		timer.start();
-		
-<<<<<<< HEAD
+
 		//1/100th second timer
-=======
-		// 1/100th second timer
->>>>>>> origin/master
 		timer2=new Timer(100, new TimerCallBack2());
 		timer2.start();
 		
@@ -175,7 +171,7 @@ public class countDown extends JComponent implements KeyListener {
 	public void keyTyped(KeyEvent e) {
 		Graphics g = getGraphics();
 		char k = e.getKeyChar();
-		if (k=='r')
+		if (k=='r'||k=='R')
 		{
 			//resets timer on pressing 'r'
 			clipNameClip.setFramePosition(0);
@@ -185,7 +181,7 @@ public class countDown extends JComponent implements KeyListener {
 			timer.restart();
 			timer2.restart();
 		}
-		else if(k=='b')
+		else if(k=='b'||k=='B')
 		{	
 			//toggles gold to pink on pressing 'b'
 			colorCount++;
